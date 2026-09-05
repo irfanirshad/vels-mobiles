@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#faf9f7">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://velsmobiles.com/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta property="og:type" content="website">
@@ -382,6 +382,12 @@ footer{border-top:1px solid var(--line);padding:52px 0 104px}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.2,.8,.3,1),transform .6s cubic-bezier(.2,.8,.3,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.mq ul{animation:none}}
+
+/* real Vels Mobiles badge in place of the generic mark */
+.mark{background:none!important;box-shadow:none!important;border-radius:50%;overflow:hidden;
+  width:40px;height:40px}
+.mark img{width:100%;height:100%;object-fit:cover}
+@media(max-width:420px){.mark{width:36px;height:36px}}
 </style>
 </head>
 <body>
@@ -418,7 +424,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 104px}
 <header id="hdr">
   <nav class="wrap nav" aria-label="Main">
     <a href="#top" class="brand">
-      <span class="mark"><svg aria-hidden="true"><use href="#i-apple"/></svg></span>
+      <span class="mark"><img src="/assets/logo-badge.png" alt="" width="80" height="80" decoding="async"></span>
       <span class="bname"><b>Vels Mobiles</b><small>Apple Specialist</small></span>
     </a>
     <div class="links">
@@ -807,7 +813,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 104px}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a href="#top" class="brand"><span class="mark"><svg aria-hidden="true"><use href="#i-apple"/></svg></span>
+        <a href="#top" class="brand"><span class="mark"><img src="/assets/logo-badge.png" alt="" width="80" height="80" decoding="async"></span>
           <span class="bname"><b>Vels Mobiles</b><small>Apple Specialist</small></span></a>
         <p>Apple service specialists on Red Hills Road, Kolathur since 2015. iPhone, iPad, Apple Watch and AirPods — display, battery, charging, water damage and software. Doorstep pickup and delivery anywhere in Chennai.</p>
       </div>
