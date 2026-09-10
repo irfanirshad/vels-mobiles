@@ -93,8 +93,8 @@ and `assets/shop-2.jpg` (800×800, square) and the page picks them up with no co
 Update the two `alt` attributes to match.
 
 ### 4. Domain
-The site is configured for **https://velsmobile.com** — canonical URL, Open Graph,
-Twitter card, sitemap, robots.txt and JSON-LD all point there. Set `velsmobile.com`
+The site is configured for **https://velsmobiles.com** — canonical URL, Open Graph,
+Twitter card, sitemap, robots.txt and JSON-LD all point there. Set `velsmobiles.com`
 (the apex, not `www`) as the **primary domain** in Netlify so it matches.
 
 ### 5. Meta Pixel — for the ₹300/day campaigns
