@@ -9,20 +9,6 @@ Pixel loads only once you paste an ID.
 
 ---
 
-## Two layouts to choose from
-
-| File | URL | Direction |
-|---|---|---|
-| `index.html` | `/` | **v1** — cool blue-grey, split hero, card grids, centred sections |
-| `index-v2.html` | `/index-v2.html` | **v2** — warm off-white, bento hero, editorial lists, horizontal rails, brand orange |
-
-Same content, same copy, same reels and photos, same form, same tracking, same schema.
-Only the layout and palette differ. v2 pulls its accent (`#ff6a13`) from the orange in
-their own promo graphics rather than a generic Apple blue.
-
-**Pick one and delete the other before deploying.** Both declare the same canonical URL,
-so they won't compete in search while both exist — but shipping two near-identical pages
-is still clutter. If you keep v2, rename it to `index.html`.
 
 ## Run it locally
 
@@ -106,13 +92,10 @@ counter with a technician at it. Drop them in as `assets/shop-1.jpg` (900×765, 
 and `assets/shop-2.jpg` (800×800, square) and the page picks them up with no code change.
 Update the two `alt` attributes to match.
 
-### 4. Set the domain (after you buy it)
-
-```bash
-sed -i 's|https://velsmobiles.com|https://YOURDOMAIN.com|g' index.html robots.txt sitemap.xml
-```
-
-Covers canonical, Open Graph, Twitter card, sitemap and JSON-LD.
+### 4. Domain
+The site is configured for **https://velsmobile.com** — canonical URL, Open Graph,
+Twitter card, sitemap, robots.txt and JSON-LD all point there. Set `velsmobile.com`
+(the apex, not `www`) as the **primary domain** in Netlify so it matches.
 
 ### 5. Meta Pixel — for the ₹300/day campaigns
 In `index.html`, near the top of the `<script>` block:
