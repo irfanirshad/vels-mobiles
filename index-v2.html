@@ -112,10 +112,10 @@ h1 span{display:block;color:var(--acc)}
 .usp li{display:flex;align-items:center;gap:8px;font-size:13.8px;color:var(--ink2);font-weight:540}
 .usp svg{width:15px;height:15px;color:var(--wa-d);flex:0 0 auto}
 
-.b-photo{grid-column:span 12;position:relative;overflow:hidden;aspect-ratio:16/11;
+.b-photo{grid-column:span 12;position:relative;overflow:hidden;aspect-ratio:1/1;background:#fff;
   border:1px solid var(--line);box-shadow:var(--sh)}
 @media(min-width:900px){.b-photo{grid-column:span 5;grid-row:span 3;aspect-ratio:auto}}
-.b-photo img{width:100%;height:100%;object-fit:cover}
+.b-photo img{width:100%;height:100%;object-fit:contain}
 .b-photo .cap{position:absolute;left:14px;right:14px;bottom:14px;display:flex;align-items:center;gap:9px;
   padding:10px 15px;border-radius:100px;background:rgba(255,255,255,.9);
   -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:13px;font-weight:600}
@@ -468,8 +468,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 104px}
       </div>
 
       <div class="b-photo">
-        <img src="/assets/shop-1.jpg" alt="An iPhone opened on the repair bench at Vels Mobiles, Kolathur, with sorted screw trays and tooling" width="900" height="765" fetchpriority="high" decoding="async">
-        <span class="cap"><svg aria-hidden="true"><use href="#i-pin"/></svg> Our bench, Red Hills Road</span>
+        <img src="/assets/hero.jpg" alt="Vels Mobiles — Apple &amp; Android sales and service, spot service. No. 9/12 Girija Nagar West, Redhills Main Road, Kolathur, Chennai 600 099. Mobile +91 98400 81414" width="1000" height="1000" fetchpriority="high" decoding="async">
       </div>
 
       <div class="tile b-rate">
